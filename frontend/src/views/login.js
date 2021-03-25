@@ -19,15 +19,10 @@ const Homepage = (props) => {
               placeholder="Password"
             />
           </div>
-          <div class="mb-4">
-            <label class="text-gray-400">
-              <input class="mr-2 leading-tight" type="checkbox" />
-              <span class="text-sm">Send me your newsletter!</span>
-            </label>
-          </div>
+
           <div class="mb-4">
             <button class="inline-block w-full py-4 px-8 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow">
-              Sign up
+              Entrar
             </button>
           </div>
         </form>

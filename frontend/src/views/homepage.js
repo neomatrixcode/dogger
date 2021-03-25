@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { setRuta, setLogueo } from "../redux/Actions";
 
 const Homepage = (props) => {
   return (
@@ -17,10 +19,19 @@ const Homepage = (props) => {
             <a
               className="inline-block py-4 px-8 mr-6 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow"
               href="#"
+              onClick={(e) => {
+                props.setRuta("login");
+              }}
             >
               Tengo un perro.
             </a>
-            <a className="text-indigo-600 hover:underline" href="#">
+            <a
+              className="text-indigo-600 hover:underline"
+              href="#"
+              onClick={(e) => {
+                props.setRuta("login");
+              }}
+            >
               Quiero pasear un perro.
             </a>
           </div>
@@ -380,4 +391,13 @@ const Homepage = (props) => {
   );
 };
 
-export default Homepage;
+const mapDispatchToProps = (dispatch) => ({
+  setRuta: (ruta) => dispatch(setRuta(ruta)),
+  setLogueo: (datos) => dispatch(setLogueo(datos)),
+});
+
+const mapStateToProps = (state) => ({
+  Logueo: state.Logueo,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Homepage);

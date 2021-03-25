@@ -4,3 +4,10 @@ export const setRuta = (ruta) => {
     ruta: ruta,
   };
 };
+
+export const setLogueo = (datos) => {
+  return {
+    type: "SET_LOGUEO",
+    datos: datos,
+  };
+};

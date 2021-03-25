@@ -1,41 +1,35 @@
-import React, { useEffect, useState } from "react";
-import logo from './logo.svg';
-import './App.css';
-import axios from "axios";
+import React from "react";
+import { connect } from "react-redux";
+import Layout from "./components/layout";
+import Homepage from "./views/homepage";
 
-function App() {
+function App(props) {
+  switch (props.ruta) {
+    case "homepage":
+      return (
+        <Layout>
+          <Homepage />
+        </Layout>
+      );
 
-  const [data,setdata] = useState("");
+    case undefined:
+      return (
+        <Layout>
+          <Homepage />
+        </Layout>
+      );
 
-
-const getdata = () => {
-    axios
-      .get("/api/todos/")
-      .then((res) => setdata(JSON.stringify(res.data) ))
-      .catch((err) => console.log(err));
-  };
-
-useEffect(() => {
-    getdata();
-    return () => {};
-  }, []);
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{data}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    default:
+      return (
+        <Layout>
+          <Homepage />
+        </Layout>
+      );
+  }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  ruta: state.Ruta,
+});
+
+export default connect(mapStateToProps)(App);

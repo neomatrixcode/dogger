@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Layout from "./components/layout";
 import Homepage from "./views/homepage";
+import Login from "./views/login";
 
 function App(props) {
   switch (props.ruta) {
@@ -9,6 +10,13 @@ function App(props) {
       return (
         <Layout>
           <Homepage />
+        </Layout>
+      );
+
+    case "login":
+      return (
+        <Layout>
+          <Login />
         </Layout>
       );
 

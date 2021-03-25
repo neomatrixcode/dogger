@@ -3,14 +3,18 @@ import { connect } from "react-redux";
 import Layout from "./components/layout";
 import Homepage from "./views/homepage";
 import Login from "./views/login";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 function App(props) {
   switch (props.ruta) {
     case "homepage":
       return (
-        <Layout>
+        <div className="container mx-auto px-4">
+          <Navbar />
           <Homepage />
-        </Layout>
+          <Footer />
+        </div>
       );
 
     case "login":

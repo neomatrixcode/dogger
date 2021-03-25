@@ -5,24 +5,23 @@ const Homepage = (props) => {
     <div>
       <section className="py-12 px-4 text-center">
         <div className="w-full max-w-2xl mx-auto">
-          <span className="text-sm font-semibold">TAGLINE</span>
           <h2 className="text-5xl mt-2 mb-6 leading-tight font-semibold font-heading">
-            No paper plane can be made without paper
+            No te preocupes, lo pasara genial.
           </h2>
           <p className="mb-8 text-gray-400 leading-relaxed">
-            Professional, dedicated, local. Dunder Mifflin is on its best patch
-            to change the way you think about paper. That’s us - people who sell
-            limitless paper in the paperless world.
+            Dogger, es el lugar para los dueños de mascotas que desean que
+            personas responsables los paseen y donde la gente responsable puede
+            pasear perros a cambio de un pago.
           </p>
           <div>
             <a
               className="inline-block py-4 px-8 mr-6 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow"
               href="#"
             >
-              Sign up
+              Tengo un perro.
             </a>
             <a className="text-indigo-600 hover:underline" href="#">
-              Learn more
+              Quiero pasear un perro.
             </a>
           </div>
         </div>
@@ -46,11 +45,11 @@ const Homepage = (props) => {
               ></path>
             </svg>
             <h3 className="text-xl my-3 font-semibold font-heading">
-              High durability
+              Protegido.
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Forget about paper jams with our increased stability product.
-              Ideal for high-quality printing, colour printing and photocopying.
+              Nuestros paseadores de perros son personas verificadas que se
+              preocupan por su cuidado y protección.
             </p>
           </div>
           <div className="lg:w-1/3 px-4 mb-6">
@@ -75,11 +74,13 @@ const Homepage = (props) => {
               ></path>
             </svg>
             <h3 className="text-xl my-3 font-semibold font-heading">
-              Versatility
+              Horarios.
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Multi-functional paper for various office needs. Snow-white sheets
-              will shine bright like diamond for many years.
+              Los paseadores de perros pueden establecer horarios de paseo y
+              características de los perros que pasean, con la intención de que
+              tengan el tiempo dedicado al paseo del perro y sean razas que
+              pueden cuidar.
             </p>
           </div>
           <div className="lg:w-1/3 px-4 mb-6">
@@ -97,13 +98,12 @@ const Homepage = (props) => {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               ></path>
             </svg>
-            <h3 className="text-xl my-3 font-semibold font-heading">
-              Value-based price
-            </h3>
+            <h3 className="text-xl my-3 font-semibold font-heading">Precio.</h3>
             <p className="text-gray-400 leading-relaxed">
-              The best combination of quality and economy comes with Dunder
-              Mifflin paper. The offer includes paper in wide range of density
-              and sizes.
+              Dogger funciona como un intermediario entre los dueños de perros y
+              los paseadores con tal de que los primeros puedan acceder al
+              servicio de forma asequible y los últimos puedan obtener ganancias
+              redituables.
             </p>
           </div>
         </div>
@@ -111,14 +111,14 @@ const Homepage = (props) => {
 
       <section className="pt-12 pb-16 px-4">
         <h2 className="text-3xl mb-10 text-center font-semibold font-heading">
-          How to get Dunder Mifflined?
+          Como entro a Dogger?
         </h2>
         <div className="flex max-w-sm mb-12 mx-auto text-center border-b-2">
           <div className="w-1/2 pb-2 border-b-4 border-indigo-600">
-            <button className="hover:text-indigo-600">For Customers</button>
+            <button className="hover:text-indigo-600">Dueños de perros</button>
           </div>
           <div className="w-1/2 pb-2">
-            <button className="hover:text-indigo-600">For Companies</button>
+            <button className="hover:text-indigo-600">Paseadores</button>
           </div>
         </div>
         <div className="flex flex-wrap -mx-8 text-center">
@@ -138,12 +138,12 @@ const Homepage = (props) => {
               ></path>
             </svg>
             <h3 className="text-2xl my-3 font-semibold font-heading">
-              Contact our Sales
+              Contacto
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              During the phone call we will be able to present you all details
-              of cooperation, pricing and special offers, suited for your
-              company.
+              Durante la llamada telefónica, podremos presentarle todos los
+              detalles del servicio, precios y ofertas especiales, adecuados
+              para sus necesidades.
             </p>
           </div>
           <div className="lg:w-1/3 px-8 mb-8 lg:mb-0">
@@ -162,11 +162,12 @@ const Homepage = (props) => {
               ></path>
             </svg>
             <h3 className="text-2xl my-3 font-semibold font-heading">
-              Sign the documents
+              Firme los documentos.
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              We can also talk during business meeting, or visit your office
-              anytime you want! Our employees will provide proper contracts.
+              ¡También podemos hablar durante una reunión virtual o visitarlo en
+              persona cuando lo desee! Nuestros empleados proporcionarán los
+              contratos adecuados.
             </p>
           </div>
           <div className="lg:w-1/3 px-8 mb-8 lg:mb-0">
@@ -185,72 +186,26 @@ const Homepage = (props) => {
               ></path>
             </svg>
             <h3 className="text-2xl my-3 font-semibold font-heading">
-              Wait for delivery!
+              Bienvenido!
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              You don’t buy a pig... or shall I say a paper in a poke. The
-              supplies will be delivered to your company every first Monday of
-              the month.
+              A partir de este momento usted podrá utilizar el servicio 24/7 de
+              forma ininterrumpida y con la seguridad de que cuidaran a su
+              mascota.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="pt-8 px-4 text-center">
-        <div className="max-w-2xl mx-auto mb-8">
-          <h2 className="text-4xl leading-tight mb-6 font-semibold font-heading">
-            What do our customers have to say about our services?
-          </h2>
-          <p className="text-gray-400 leading-relaxed">
-            See how paper can change the way you think about business.
-          </p>
-        </div>
-        <div className="flex flex-wrap -mx-8">
-          <div className="w-1/2 md:w-1/6 px-8 mb-8">
-            <img src="placeholders-2-0/logos/realweb.svg" alt="" />
-          </div>
-          <div className="w-1/2 md:w-1/6 px-8 mb-8">
-            <img src="placeholders-2-0/logos/gitscape.svg" alt="" />
-          </div>
-          <div className="w-1/2 md:w-1/6 px-8 mb-8">
-            <img src="placeholders-2-0/logos/k-hole.svg" alt="" />
-          </div>
-          <div className="w-1/2 md:w-1/6 px-8 mb-8">
-            <img src="placeholders-2-0/logos/plucky.svg" alt="" />
-          </div>
-          <div className="w-1/2 md:w-1/6 px-8 mb-8">
-            <img src="placeholders-2-0/logos/1stsight.svg" alt="" />
-          </div>
-          <div className="w-1/2 md:w-1/6 px-8 mb-8">
-            <img src="placeholders-2-0/logos/tholio.svg" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 px-4 text-center">
+      <section className="py-12 px-4 text-center" id="equipo">
         <h2 className="text-4xl mb-2 leading-tight font-semibold font-heading">
-          Dunder Mifflin Family
+          Equipo Dogger
         </h2>
         <p className="max-w-xl mx-auto mb-12 text-gray-400">
-          Because no great company could exist without accountants, sellers,
-          stock workers, and of course - paper.
+          Porque ninguna gran empresa podría existir sin contadores, vendedores,
+          trabajadores de bolsa y, por supuesto, sin un perro.
         </p>
         <div className="flex flex-wrap -mx-8">
-          <div className="md:w-1/3 p-8">
-            <img
-              className="w-1/3 mx-auto mb-4 rounded-full"
-              src="placeholders-2-0/pictures/female_avatar.svg"
-              alt=""
-            />
-            <h3 className="text-xl mb-1 font-semibold font-heading">
-              Karen Filippelli
-            </h3>
-            <span>Regional Manager</span>
-            <p className="mt-4 text-gray-400 leading-relaxed">
-              Started as a Sales representative at Stamford branch, moved to
-              Scranton. All of us left as soon as possible except for Andy.
-            </p>
-          </div>
           <div className="md:w-1/3 p-8 md:border-l">
             <img
               className="w-1/3 mx-auto mb-4 rounded-full"
@@ -260,10 +215,10 @@ const Homepage = (props) => {
             <h3 className="text-xl mb-1 font-semibold font-heading">
               Darryl Philbin
             </h3>
-            <span>Marketing Director</span>
+            <span>Director de marketing</span>
             <p className="mt-4 text-gray-400 leading-relaxed">
-              The warehouse is not a piece of cake, man. I started there as an
-              Assistant and finally got a promotion to the Marketing Director.
+              Comencé en Dogger como asistente y finalmente obtuve un ascenso a
+              Director de Marketing.
             </p>
           </div>
           <div className="md:w-1/3 p-8 md:border-l">
@@ -275,51 +230,64 @@ const Homepage = (props) => {
             <h3 className="text-xl mb-1 font-semibold font-heading">
               Kelly Kapoor
             </h3>
-            <span>Customer Service</span>
+            <span>Servicio al Cliente</span>
             <p className="mt-4 text-gray-400 leading-relaxed">
-              I work for Dunder Mifflin for a few years now. I learned a lot.
-              You know, one person department is not easy to manage.
+              Trabajo en Dogger desde hace algunos años. Aprendí mucho. Ya
+              sabes, el departamento de una sola persona no es fácil de
+              administrar.
+            </p>
+          </div>
+          <div className="md:w-1/3 p-8 md:border-l">
+            <img
+              className="w-1/3 mx-auto mb-4 rounded-full"
+              src="placeholders-2-0/pictures/female_avatar.svg"
+              alt=""
+            />
+            <h3 className="text-xl mb-1 font-semibold font-heading">Dogie</h3>
+            <span>Perro de la offina</span>
+            <p className="mt-4 text-gray-400 leading-relaxed">
+              Dogie el perro de la oficina con el que pasamos momentos
+              divertidos, pero no te confies, en cuanto dejes tu almuerzo sin
+              vigilacia desaparecera.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-8 px-4">
+      <section className="py-8 px-4" id="precios">
         <div className="flex flex-wrap -mx-8 text-center">
           <div className="w-full md:w-1/2 p-8 mb-4 md:mb-0">
-            <h3 className="text-5xl font-semibold font-heading">$9 / mo</h3>
+            <h3 className="text-5xl font-semibold font-heading">$9 USD/ mes</h3>
             <p className="flex-grow mt-4 mb-6 text-gray-400 leading-relaxed">
-              Just enough paper for small business. Not enough to waste it on
-              fluffy animals photos. The best quality and economy comes with
-              Dunder Mifflin paper.
+              Es lo que pagas para tener a tu mascota de buen animo.
             </p>
             <a
               className="inline-block py-4 px-8 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow"
               href="#"
             >
-              Contact sales
+              Contactar a ventas
             </a>
           </div>
           <div className="w-full md:w-1/2 p-8 mb-4 md:mb-0 md:border-l">
-            <h3 className="text-5xl font-semibold font-heading">$49 / mo</h3>
+            <h3 className="text-5xl font-semibold font-heading">
+              $49 USD/ mes
+            </h3>
             <p className="mt-4 mb-6 text-gray-400 leading-relaxed">
-              That’s what we’re talking about! More reams of paper is a really
-              reamful choice. The best combination of quality and economy comes
-              with Dunder Mifflin paper.
+              Es lo que recibes a cambio de tu tiempo y cuidados.
             </p>
             <a
               className="inline-block py-4 px-8 leading-none text-indigo-600 bg-indigo-50 hover:bg-indigo-100 font-semibold rounded shadow"
               href="#"
             >
-              Contact sales
+              Contactar a ventas
             </a>
           </div>
         </div>
       </section>
 
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" id="contacto">
         <h2 className="text-4xl mb-10 text-center font-semibold font-heading">
-          Contact the Scranton team
+          Contactar al equipo Dogger
         </h2>
         <div className="w-full max-w-2xl mx-auto mb-12">
           <form>
@@ -333,10 +301,10 @@ const Homepage = (props) => {
               </div>
               <div className="w-1/2 px-2">
                 <select className="appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none">
-                  <option>-- Select product --</option>
-                  <option>Product 1</option>
-                  <option>Product 2</option>
-                  <option>Product 3</option>
+                  <option>-- Asunto --</option>
+                  <option>Paseador</option>
+                  <option>Dueño de un perro</option>
+                  <option>Otro</option>
                 </select>
               </div>
             </div>
@@ -349,7 +317,7 @@ const Homepage = (props) => {
             </div>
             <div>
               <button className="inline-block w-full py-4 px-8 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow">
-                Submit
+                Enviar
               </button>
             </div>
           </form>
@@ -404,7 +372,7 @@ const Homepage = (props) => {
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               ></path>
             </svg>
-            <span>scranton@dundermifflin.com</span>
+            <span>scranton@dogger.com</span>
           </div>
         </div>
       </section>

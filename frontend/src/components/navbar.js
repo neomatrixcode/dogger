@@ -26,21 +26,15 @@ const Navbar = (props) => {
       <div className="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
         <a
           className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600"
-          href="#"
+          href="#equipo"
         >
-          Products
-        </a>
-        <a
-          className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600"
-          href="#"
-        >
-          Team
+          Equipo
         </a>
         <a
           className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600"
-          href="#"
+          href="#precios"
         >
-          Customers
+          Precios
         </a>
       </div>
       <div className="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
@@ -58,9 +52,9 @@ const Navbar = (props) => {
         </a>
         <a
           className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600"
-          href="#"
+          href="#contacto"
         >
-          Contact
+          Contacto
         </a>
       </div>
     </nav>

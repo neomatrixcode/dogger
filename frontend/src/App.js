@@ -8,6 +8,7 @@ import Registerpaseador from "./views/registerpaseador";
 import Registerpropietario from "./views/registerpropietario";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import Panel from "./views/panel";
 
 function App(props) {
   switch (props.ruta) {
@@ -45,6 +46,13 @@ function App(props) {
       return (
         <Layout>
           <Registerpropietario />
+        </Layout>
+      );
+
+    case "panel":
+      return (
+        <Layout>
+          <Panel />
         </Layout>
       );
 

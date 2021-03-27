@@ -9,6 +9,9 @@ const Navbarsimple = (props) => {
         <a
           className="text-xl text-indigo-600 font-semibold font-heading"
           href="#"
+          onClick={(e) => {
+            props.setRuta("homepage");
+          }}
         >
           Dogger
         </a>

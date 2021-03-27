@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { setRuta, setLogueo } from "../redux/Actions";
+import { getCookieValue, datauserexist } from "../services/functions";
 
 const Navbarsimple = (props) => {
   return (
@@ -10,7 +11,9 @@ const Navbarsimple = (props) => {
           className="text-xl text-indigo-600 font-semibold font-heading"
           href="#"
           onClick={(e) => {
-            props.setRuta("homepage");
+            props.setRuta(
+              getCookieValue("tokensession") ? "panel" : "homepage"
+            );
           }}
         >
           Dogger

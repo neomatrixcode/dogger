@@ -1,7 +1,10 @@
 import { combineReducers } from "redux";
 import { getCookieValue, datauserexist } from "../services/functions";
 
-const Ruta = (state = "homepage", action) => {
+const Ruta = (
+  state = getCookieValue("tokensession") ? "panel" : "homepage",
+  action
+) => {
   switch (action.type) {
     case "SET_RUTA":
       return action.ruta;

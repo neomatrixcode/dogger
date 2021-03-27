@@ -20,7 +20,7 @@ export const getCookieValue = (nombreCookie) => {
 };
 
 export const getToken = () => {
-  return getCookieValue("session").session;
+  return getCookieValue("tokensession").session;
 };
 
 function funcionError(data) {
@@ -60,7 +60,7 @@ const logOut = () => {
 };
 
 export const datauserexist = () => {
-  if (getCookieValue("session") && localStorage.getItem("usuario")) {
+  if (getCookieValue("tokensession") && localStorage.getItem("usuario")) {
     return JSON.parse(localStorage.getItem("usuario"));
   } else {
     logOut();

@@ -36,6 +36,7 @@ const Loginpaseador = (props) => {
     document.cookie =
       "tokensession=" + data.access + ";path=/;max-age=" + 60 * 60 * 24 * 3;
     localStorage.setItem("usuario", JSON.stringify({ tipo: "paseador" }));
+    props.setLogueo({ tipo: "paseador" });
     props.setRuta("panel");
   };
 

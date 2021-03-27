@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { setRuta, setLogueo } from "../redux/Actions";
+import Formulariomascota from "../components/formulariomascota";
+import Formularioreserva from "../components/formularioreserva";
 
 const Panel = (props) => {
   const [mascota, setmascota] = useState("");
@@ -8,36 +10,39 @@ const Panel = (props) => {
 
   return (
     <>
-      <section className="pb-8 pt-2 px-4 mb-8 bg-gray-50  rounded">
-        <div className="flex items-center justify-between py-3 px-4 ">
-          <h2 className="text-center text-xl text-indigo-900 font-display font-semibold lg:text-left xl:text-5xl xl:text-bold mb-4">
-            Mis mascotas
-          </h2>
+      {props.Logueo?.tipo === "propietario" ? (
+        <section className="pb-8 pt-2 px-4 mb-8 bg-gray-50  rounded">
+          <div className="flex items-center justify-between py-3 px-4 ">
+            <h2 className="text-center text-xl text-indigo-900 font-display font-semibold lg:text-left  xl:text-bold mb-4">
+              Mis mascotas
+            </h2>
 
-          <input
-            className="appearance-none block py-3  w-1/2  sm:w-1/4 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
-            type="text"
-            placeholder="filtrar por nombre"
-          />
-        </div>
-        <div className="flex flex-wrap -mx-4">
-          <div className="w-full lg:w-1/4 px-4 mb-4 lg:mb-0">
-            <div className="h-full border rounded shadow">
-              <div className="flex flex-col p-4 bg-white">
-                <h3 className="text-3xl mb-3 font-semibold font-heading ">
-                  Fido
-                </h3>
-                <span>chihuahua</span>
-                <span className="text-indigo-500">pequeño</span>
+            <input
+              className="appearance-none block py-3  w-1/2  sm:w-1/4 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
+              type="text"
+              placeholder="filtrar por nombre"
+            />
+          </div>
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full lg:w-1/4 px-4 mb-4 lg:mb-0">
+              <div className="h-full border rounded shadow">
+                <div className="flex flex-col p-4  bg-white">
+                  <h3 className="text-3xl mb-3 font-semibold font-heading ">
+                    Fido
+                  </h3>
+                  <span>chihuahua</span>
+                  <span className="text-indigo-500">pequeño</span>
+                </div>
               </div>
             </div>
+            <Formulariomascota></Formulariomascota>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section className="pb-8 pt-2 px-4 mb-8 bg-gray-50  rounded">
         <div className="flex items-center justify-between py-3 px-4 ">
-          <h2 className="text-center text-xl text-indigo-900 font-display font-semibold lg:text-left xl:text-5xl xl:text-bold mb-4">
+          <h2 className="text-center text-xl text-indigo-900 font-display font-semibold lg:text-left  xl:text-bold mb-4">
             Reservas
           </h2>
 
@@ -79,16 +84,19 @@ const Panel = (props) => {
                 <div class=" text-gray-900 text-center inline-flex items-center justify-center w-12  mb-2  ">
                   <i className={"fas fa-paw text-base px-1"}></i>
                   <i className={"fas fa-paw text-base px-1"}></i>
-                  <i
-                    className={
-                      "cursor-pointer fas fa-plus-circle text-base px-1 text-gray-300 hover:text-green-500"
-                    }
-                  ></i>
+                  {props.Logueo?.tipo === "propietario" ? (
+                    <i
+                      className={
+                        "cursor-pointer fas fa-plus-circle text-base px-1 text-gray-300 hover:text-green-500"
+                      }
+                    ></i>
+                  ) : null}
                 </div>
                 <span className="text-gray-500 text-sm">#plaza del centro</span>
               </div>
             </div>
           </div>
+          <Formularioreserva></Formularioreserva>
         </div>
       </section>
     </>

@@ -4,17 +4,21 @@ from .models import Perro
 from .models import Paseador
 from .models import Reserva
 from django.contrib.auth.models import User
+from django.contrib.auth.hashers import make_password
 
 class UserSerializer(serializers.ModelSerializer):
+	def create(self, validated_data):
+		user = super().create(validated_data)
+		user.set_password(validated_data['password'])
+		user.save()
+		return user
+
 	class Meta:
 		model = User
 		fields = ('username', 'password')
 		extra_kwargs = {'password': {'write_only': True}}
 
-	def create(self, validated_data):
-		user = User.objects.create_user(**validated_data)
-		user.save()
-		return user
+
 
 class PropietarioSerializer(serializers.ModelSerializer):
 	usuario = UserSerializer(required=True)
@@ -25,7 +29,7 @@ class PropietarioSerializer(serializers.ModelSerializer):
 	def create(self, validated_data):
 		usuario = User.objects.create(
 		 	username = list(validated_data['usuario'].items())[0][1],
-		 	password = list(validated_data['usuario'].items())[1][1]
+		 	password = make_password(list(validated_data['usuario'].items())[1][1])
 		)
 
 		propietario = Propietario.objects.create(
@@ -49,7 +53,7 @@ class PaseadorSerializer(serializers.ModelSerializer):
 		print(validated_data)
 		usuario = User.objects.create(
 		 	username = list(validated_data['usuario'].items())[0][1],
-		 	password = list(validated_data['usuario'].items())[1][1]
+		 	password = make_password(list(validated_data['usuario'].items())[1][1])
 		)
 
 		paseador = Paseador.objects.create(

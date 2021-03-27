@@ -19,7 +19,10 @@ from rest_framework import routers
 from dogger import views
 
 router = routers.DefaultRouter()
-router.register(r'todos', views.TodoView, 'todo')
+router.register(r'propietarios', views.PropietarioView, 'propietario')
+router.register(r'perros', views.PerroView, 'perro')
+router.register(r'paseadores', views.PaseadorView, 'paseador')
+router.register(r'reservas', views.ReservaView, 'reserva')
 
 urlpatterns = [
 	path('admin/', admin.site.urls),

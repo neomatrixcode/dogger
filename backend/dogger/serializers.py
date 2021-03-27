@@ -50,6 +50,7 @@ class PaseadorSerializer(serializers.ModelSerializer):
 		fields = ('id','usuario', 'reputacion')
 
 	def create(self, validated_data):
+		print("aqui ando")
 		print(validated_data)
 		usuario = User.objects.create(
 		 	username = list(validated_data['usuario'].items())[0][1],

@@ -42,9 +42,7 @@ export const apiUse = (myobject) => {
   axios({
     url: urlpath() + myobject.url,
     method: myobject.method,
-    data: {
-      data: JSON.stringify(myobject.data),
-    },
+    data: JSON.stringify(myobject.data),
     headers: Object.assign(myheaders, myobject.headers),
   })
     .then((response) => {

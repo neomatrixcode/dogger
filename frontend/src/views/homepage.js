@@ -20,7 +20,7 @@ const Homepage = (props) => {
               className="inline-block py-4 px-8 mr-6 leading-none text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded shadow"
               href="#"
               onClick={(e) => {
-                props.setRuta("login");
+                props.setRuta("loginpropietario");
               }}
             >
               Tengo un perro.
@@ -29,7 +29,7 @@ const Homepage = (props) => {
               className="text-indigo-600 hover:underline"
               href="#"
               onClick={(e) => {
-                props.setRuta("login");
+                props.setRuta("loginpaseador");
               }}
             >
               Quiero pasear un perro.

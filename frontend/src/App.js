@@ -2,7 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import Layout from "./components/layout";
 import Homepage from "./views/homepage";
-import Login from "./views/login";
+import Loginpaseador from "./views/loginpaseador";
+import Loginpropietario from "./views/loginpropietario";
+import Registerpaseador from "./views/registerpaseador";
+import Registerpropietario from "./views/registerpropietario";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 
@@ -17,10 +20,31 @@ function App(props) {
         </div>
       );
 
-    case "login":
+    case "loginpaseador":
       return (
         <Layout>
-          <Login />
+          <Loginpaseador />
+        </Layout>
+      );
+
+    case "loginpropietario":
+      return (
+        <Layout>
+          <Loginpropietario />
+        </Layout>
+      );
+
+    case "registerpaseador":
+      return (
+        <Layout>
+          <Registerpaseador />
+        </Layout>
+      );
+
+    case "registerpropietario":
+      return (
+        <Layout>
+          <Registerpropietario />
         </Layout>
       );
 

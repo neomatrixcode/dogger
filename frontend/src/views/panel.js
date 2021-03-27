@@ -65,6 +65,14 @@ const Panel = (props) => {
                 <h3 className="text-lg mb-3 font-semibold font-heading ">
                   Paseador1
                 </h3>
+                <div className="text-lg mb-3 font-semibold font-heading ">
+                  <i
+                    className={
+                      "fas fa-star-of-life text-base text-gray-900 mx-1"
+                    }
+                  ></i>
+                  5
+                </div>
                 <h3 className="text-sm mb-3 font-semibold font-heading ">
                   Hoy pasearemos en la plaza xd
                 </h3>
@@ -73,7 +81,7 @@ const Panel = (props) => {
                   <i className={"fas fa-paw text-base px-1"}></i>
                   <i
                     className={
-                      "cursor-pointer fas fa-plus-circle text-base px-1 text-green-700"
+                      "cursor-pointer fas fa-plus-circle text-base px-1 text-gray-300 hover:text-green-500"
                     }
                   ></i>
                 </div>

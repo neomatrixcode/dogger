@@ -4,14 +4,14 @@ Dogger es una aplicación  que conecta  **dueños** de perros con  **paseadores*
 
 ### Funcionalidades
 
- - [x]  Registrar usuarios **dueños**.
- - [x] Registrar usuarios **paseadores**.
- - [ ] Un dueño puede registrar perros con su tamaño (Grande, Chico, Mediano).
- - [ ]  Un dueño puede reservar a un paseador en específico.
- - [ ] Un dueño también puede pedir que alguien pasee a su perro en algún horario.
- - [ ] Un paseador puede tener un máximo de 3 perros al mismo tiempo.
- - [ ]  Desde el punto de vista del paseador, puede recibir perros de múltiples dueños en cada reserva.
- - [ ] Un paseador puede definir horarios para pasear ciertos tamaños de perro (chico, mediano, grande o alguna combinación de estos).
+ - Registrar usuarios **dueños**.
+ - Registrar usuarios **paseadores**.
+ - Un dueño puede registrar perros con su tamaño (Grande, Chico, Mediano).
+ - Un dueño puede reservar a un paseador en específico.
+ - Un dueño también puede pedir que alguien pasee a su perro en algún horario.
+ - Un paseador puede tener un máximo de 3 perros al mismo tiempo.
+ - Desde el punto de vista del paseador, puede recibir perros de múltiples dueños en cada reserva.
+ - Un paseador puede definir horarios para pasear ciertos tamaños de perro (chico, mediano, grande o alguna combinación de estos).
 
 
 

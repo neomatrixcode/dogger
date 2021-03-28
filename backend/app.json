@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "description": "",
+  "keywords": [],
+  "website": "https://github.com/neomatrixcode/dogger",
+  "repository": "https://github.com/neomatrixcode/dogger",
+  "success_url": "/admin",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Free"
+    }
+  },
+  "image": "",
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": ""
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@ Dogger es una aplicación  que conecta  **dueños** de perros con  **paseadores*
 
 ### Backend
 
-EL backend funciona con Django 3.1 en python 3.9,1.
+EL backend funciona con Django 3.1 en python 3.9,1. Las credenciales por defecto del panel de administracion son: username:admin, Password:password ;los cuales se pueden configurar en el archivo [postdeploy.sh](https://github.com/neomatrixcode/dogger/blob/b5d402dcaa5d7fb28260c81503dfa41b215d7bcc/backend/postdeploy.sh#L2)
 
 <a href="https://heroku.com/deploy?template=https://github.com/neomatrixcode/dogger" rel="nofollow"><img alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg" style="max-width:100%;"> </a>
 

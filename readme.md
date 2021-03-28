@@ -24,6 +24,4 @@ El frontend se ha desarrollado en Reactjs.
 
 EL backend funciona con Django 3.1 en python 3.9,1.
 
-<a href="https://heroku.com/deploy?template=https://github.com/neomatrixcode/dogger
-&env[PROJECT_PATH]=backend
-" rel="nofollow"><img alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg" style="max-width:100%;"> </a>
+<a href="https://heroku.com/deploy?template=https://github.com/neomatrixcode/dogger" rel="nofollow"><img alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg" style="max-width:100%;"> </a>

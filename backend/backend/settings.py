@@ -140,8 +140,28 @@ STATICFILE_DIRS = [
 
 STATICFILE_STORAGE = 'whitenoise.storage.CompressedManifestStatictFilesStorage'
 
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = (
+        'GET',
+        'POST',
+        'PUT',
+        'PATCH',
+        'DELETE',
+        'OPTIONS'
+)
+
+CORS_ALLOW_HEADERS = (
+        'Access-Control-Allow-Origin',
+        'x-requested-with',
+        'content-type',
+        'accept',
+        'origin',
+        'authorization',
+        'x-csrftoken'
+)
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
+     '*'
 ]
 
 SIMPLE_JWT = {

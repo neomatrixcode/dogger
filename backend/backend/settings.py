@@ -160,9 +160,7 @@ CORS_ALLOW_HEADERS = (
         'authorization',
         'x-csrftoken'
 )
-CORS_ORIGIN_WHITELIST = [
-     '*'
-]
+CORS_ORIGIN_WHITELIST = ['*']
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=5),

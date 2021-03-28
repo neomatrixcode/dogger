@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "description": "",
-  "keywords": [],
+  "keywords": ["django", "python", "heroku"],
   "website": "https://github.com/neomatrixcode/dogger",
   "repository": "https://github.com/neomatrixcode/dogger",
   "success_url": "/admin",
@@ -20,9 +20,12 @@
       "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
     },
     {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
+      "url": "heroku/python"
     }
   ],
+  "scripts":{
+      "postdeploy":"bash postdeploy.sh"
+  },
   "environments": {
     "test": {
       "scripts": {

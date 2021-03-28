@@ -13,8 +13,8 @@
   },
   "image": "",
   "env": {
-  "PROJECT_PATH": "backend",
-},
+  "PROJECT_PATH": "backend"
+  },
   "buildpacks": [
     {
       "url": "https://github.com/timanovsky/subdir-heroku-buildpack"

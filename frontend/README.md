@@ -22,7 +22,7 @@ Dueños:
 - Pueden registar a sus perros
 - pueden crear una reserva designando a sus mascotas y a un padseador en especifico
 - pueden crear una reserva solo con sus mascotas sin desingnar a un paseador 
-- Pueden buscar entre las reservas abiertas mediante los hashtags en un cuadro de busqueda y asinar a sus mascotas a las reservas que mas les convengan
+- Pueden buscar entre las reservas abiertas mediante los hashtags en un cuadro de busqueda y asinar a sus mascotas a las reservas que más les convengan
 
 ### Deploy
 El frontend se ha desarrollado en Reactjs. El frontend se conectara al backend mediante la funcion [urlpath](https://github.com/neomatrixcode/dogger/blob/5eb522fc034015b1d8e3794c41aac107253ec94a/frontend/src/services/functions.js#L4). Puede encontrar una version previamente compilada en la carpeta [build](https://github.com/neomatrixcode/dogger/tree/master/frontend/build) y subir los archivos a el servidor que prefiera.

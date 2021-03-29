@@ -16,7 +16,8 @@ Paseadores:
 - No pueden registrar mascotas
 - Al crear una reserva su nombre aparece de forma autoimatica pero no su reputación
 - No pueden designar a los perros que van a pasear al momento de crear la reserva
-- solo pueden crear reservas con hora, duracion añadir una nota al respecto y hashtags para que a los propietarios puedan encontrar sus reservas
+- Solo pueden crear reservas con hora, duracion añadir una nota al respecto y hashtags para que a los propietarios puedan encontrar sus reservas
+- Son los unicos que pueden confirmar las reservas, las cuales una vez confirmadas dejan de estar disponibles, dejan de aceptar mascotas o cambios de paseadores y se confirma el paseo al dueño para que tenga listos a los perros a la hora especificada.
 
 Dueños:
 - Pueden registar a sus perros

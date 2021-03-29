@@ -5,9 +5,11 @@ Los dueños de perros pueden contratar el servicio a bajo precio y los paseadore
 El servicio funciona mediante una subscripcion mensual, lo que brinda acceso 24/7 permitiendo a un **dueño** 
 - Crear una **reserva** con un paseador especifico que pasee a su perro a un hora determinada.
 - Crear una **reserva** especificando que su mascota necesita un paseo a una cierta hora y elegir entre los candidatos que deseen realizar dicha la labor.
-- Buscar una **reverva** creada por un **paseador**, que se adecue a los horarios y necesidades de las mascotas mediante una descripcion corta y/o hashtag incluida en la **reserva**, ejem: Hoy pasearemos en la parque, buenbenidos todos los perros de tamaño mediano #plaza_del_centro  #caminata_ligera
+- Buscar una **reverva** creada por un **paseador**, que se adecue a los horarios y necesidades de las mascotas mediante una descripcion corta y/o hashtag incluida en la **reserva**, ejem: Hoy pasearemos en la parque, buenbenidos todos los perros de tamaño mediano *#plaza_del_centro*  *#caminata_ligera* *#galletitas*
 
-Los paseadores, reciben una puntuacion en la plataforma por parte de los dueños de los perros, los cuales determinan si se ha cuidado bien de la mascota o no. Un **paseador** que tenga una **reputacion** negativa comenzarán a ser ignorados dentro del servicio y de llegar a -25 puntos de reputacion seran dados de baja de la pltaforma.
+Los paseadores, reciben una compensacion economica por cada perro que paseen, el cual se determinara por la cantidad de perros y laduracion del paseo ademas de su puntuacion dentro de la plataforma.
+La puntuacion o grado de **reputacion** sera asignada por parte de los dueños de los perros, los cuales determinan si se ha cuidado bien de la mascota o no. 
+Un **paseador** que tenga una **reputacion** negativa comenzarán a ser **ignorados** dentro del servicio y de llegar a **-25 puntos** de reputacion seran **dados de baja** de la plataforma.
 
 ### Funcionalidades
 

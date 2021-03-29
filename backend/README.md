@@ -16,7 +16,7 @@ Existen 3 entidades dentro de la aplicación:
 La aplicacion emplea :
 - djangorestframework: permite serializar los modelos y colocarlos en una url de donde seran pedidos
 - djangorestframework-simplejwt: implementa tokens jwt a la aplicacion con la intencion de ser utilizados para la utenticacion del cliente que acceda a los datos del servidor.
-- 
+
 
 #### Deploy
 
